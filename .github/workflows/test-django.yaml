@@ -17,7 +17,9 @@ jobs:
          - name: upgrade pip 
            run: pip install --upgrade pip      
          - name: Install requirements
-           run: pip install -r growii_django/requirements.txt
+           run: pip install -r  growii_django\django_github_action\requirements.txt
          - name: Run Django Tests
-           run: python growii_django/manage.py test
+           run: python  growii_django\django_github_action\manage.py test
+
+         
 
